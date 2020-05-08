@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+    </head>
+    <body>
+        <form>
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label for = "first">FirstName</label><input type = "text" id = "first" name = "first" maxlength = "15" size = "!0"><br>
+            <label for = "pass">Password</label><input type = "password" id = "pass" name = "pass"><br>
+        </fieldset>
+        <fieldset>
+            <label for = "feed">feedback</label>
+            <textarea cols = "10" rows = "10" id = "feed" name = "feed"></textarea>
+            <h3>Gender</h3>
+            <input type = "radio" name = "gender" id = "gen1" value = "male">
+            <label for = "gen1">Male</label>
+            <input type = "radio" name = "gender" id = "gen2" value = "female">
+            <label for = "gen2">Female</label>
+            <h3>Courses</h3>
+            <input type = "checkbox" name = "courses" id = "course1" value = "JavaScript">
+            <label for = "course1">JavaScript</label>
+            <input type = "checkbox" name = "courses" id = "course2" value = "Java">
+            <label for = "course2">Java</label>
+            <input type = "checkbox" name = "courses" id = "course3" value = "Python">
+            <label for = "course3">Python</label>
+            <br>
+            <label for = "upfile">UploadFile</label>
+            <input type = "file" id = "upfile" name = "upfile">
+            <br>
+            <label for = "pic">Picture</label>
+            <input type = "image" src = "https://cdn.pixabay.com/photo/2014/08/29/03/02/horse-430441__480.jpg" width = "100" height = "100">
+            <button type = "button">Go</button>  <br>
+            <label for = "ctime">CourseTime</label>
+            <select name = "ctime" id = "ctime">
+                <option value=""></option>
+                <option value="6-7AM">6-7Am</option>
+                <option value="7-8AM">7-8AM</option>
+                <option value="8-9AM">8-9AM</option>
+            </select>
+        </fieldset>
+
+        <button type = "submit">Register</button>
+        <button type = "reset">clear</button>
+        </form>
+    </body>
+</html>

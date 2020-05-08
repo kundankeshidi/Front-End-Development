@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arithmetical calculation</title>
+    </head>
+    <body>
+        <form>
+            <div>
+                <label for="num1">Enter a value</label>
+                <input type="text" name="num1" id="num1">
+            </div>
+            <div>
+                <label for="num2">Enter b value</label>
+                <input type="text" name="num2" id="num2">
+            </div>
+            <button type="button" onclick="add(num1.value,num2.value)">+</button>
+            <button type="button" onclick="sub(num1.value,num2.value)">-</button>
+            <button type="button" onclick="mul(num1.value,num2.value)">*</button>
+            <button type="button" onclick="div(num1.value,num2.value)">/</button>
+            <div>
+                <label for="res">Result</label>
+                <input type="text" name="res" id="res">
+            </div>
+        </form>
+        <script src="externalJS/arithmeticFunc2.js">
+        </script>
+    </body>
+</html>

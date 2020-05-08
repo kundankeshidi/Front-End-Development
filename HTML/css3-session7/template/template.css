@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 980px;
+    height: 750px;
+    background-color: blueviolet;
+    margin: 0 auto;
+}
+/* start header section*/
+
+.header{
+    width: inherit;
+    height: 150px;
+    background-color: burlywood;
+}
+
+.logo{
+    width:100px;
+    height:100px;
+    background: url(images/logo.jpg);
+    margin: 25px 0 25px 50px;
+    float: left;
+}
+
+.companyName{
+    width:830px;
+    height: 150px;
+    background-color: wheat;
+    float: right;  
+}
+
+.cname{
+    width: 630px;
+    margin: 25px 0 0 200px;
+    font-size: 50px;
+    color: red;
+}
+
+.caption{
+    width: 580px;
+    margin: 0 0 0 250px;
+    font-size: 30px;
+    color: red;
+}
+
+/*end of header section*/
+
+/* Begin nav section*/
+.nav{
+    width: inherit;
+    height: 50px;
+    background-color: blueviolet;
+    line-height: 50px;
+    position: relative;
+}
+
+.nav>ul{
+    list-style-type: none; 
+}
+
+.nav>ul>li{
+    display: inline;
+    float:left;
+}
+
+.nav>ul>li>a{
+    text-decoration: none;
+    padding: 15px 74px;
+    background-color: aqua;
+}
+
+.nav>ul>li>a:hover{
+    background-color: blue;
+    color: white;
+}
+
+/* end nav section */
+
+/*start of content section*/
+.content{
+    width: inherit;
+    height: 500px;
+    background-color: violet;
+}
+
+.top-content{
+    width: 930px;
+    height: 235px;
+    background-color: sienna;
+    margin: 10px 25px;
+    float:left;
+}
+
+.top-content-img1{
+    width: 465px;
+    height: 235px;
+    background-image: url(images/top1.jpg);
+    float: left;
+}
+
+.top-content-img2{
+    width: 465px;
+    height: 235px;
+    background-image: url(images/top2.jpg);
+    float: left;
+}
+
+.bottom-content{
+    width: inherit;
+    height: 235px;
+    background-color: yellowgreen;
+    float: left;
+    margin: 0 25px 10px 25px;
+}
+
+.bottom-content-img1{
+    width: 240px;
+    height: 235px;
+    background-image: url(images/top3.jpg);
+    float: left;
+}
+
+.bottom-content-img2{
+    width: 240px;
+    height: 235px;
+    background-image: url(images/top4.jpg);
+    float: left;
+}
+
+.bottom-content-text{
+    width: 450px;
+    height: 235px;
+    float: left;
+    overflow: auto;
+    text-align: justify;
+}
+
+/*end of content section*/
+.footer{
+    width: inherit;
+    height: 50px;
+    background-color: blueviolet;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
