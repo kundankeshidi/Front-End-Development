@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Variable Scope</title>
+    </head>
+
+    <body>
+        <script>
+            var a = 50; //global
+            let b = 60; //script scope
+            const c = 70; //script sope
+            function varscope(){
+                var a = 55; //local
+                let b = 65; //local
+                const c = 75; //local scope
+                if(b>c){
+                    let b = 67; //block scope
+                    a = b+c;
+                    console.log("a value is in condition",a);  //67+75 = 142
+                    console.log("b value is in condition",b); //67
+                    console.log("c value is in condition",c);
+                }
+                console.log("a value is in function",a);
+                console.log("b value is in function",b);
+                console.log("c value is in function",c);
+            }
+            console.log("global a value is",a);
+            console.log("global b value is",b);
+            console.log("global c value is",c);
+        </script>
+    </body>
+</html>

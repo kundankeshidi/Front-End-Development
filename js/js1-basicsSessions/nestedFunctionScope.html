@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrow Function</title>
+    </head>
+
+    <body>
+        <Script>
+            "use strict";
+            function employee(){
+                this.getInfo = function(){
+                    console.log(this);
+                    setInterval(function(){
+                        console.log(this)
+                    }, 1000)
+                }
+                return getInfo();
+            }
+           let emp = new employee();
+           emp.getInfo();
+        </Script>
+    </body>
+</html>

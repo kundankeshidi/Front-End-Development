@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>arr Methods</title>
+    </head>
+
+    <body>
+        <script>
+            "use strict";
+            let names = ["kundan", "akhil", "raj"];
+            document.write(names+ "<br>")
+            names.push("rahul", "nihal", "nikil");  //add elements at the end of an array
+            document.write(names+"<br>")
+            names.pop();   // removes element at the end of an array
+            document.write(names+"<br>")
+            names.unshift("rajesh", "sai", "pujitha")  // adds elements at the begining of an array
+            document.write(names+"<br>")
+            names.shift();   // removes element at the begining of an array
+            document.write(names+"<br>")
+            document.write(names.indexOf("pujitha")+"<br>")
+            names.splice(names.indexOf("kundan"), 1);  // 1 indicates the length of elements to be removed from that particular element
+            document.write(names+"<br>")
+            names.splice(names.indexOf("akhil"), 2);
+            document.write(names+"<br>")
+            names.splice(names.indexOf("pujitha"), 0,"nirmala", "Tejasvi");  // taking 0 add elements before the index element, 1 removes the index element and add the new elements
+            document.write(names+"<br>")
+            document.write(names.join()+"<br>")
+            console.log(names.join()+"<br>") // join method converts an array to a string
+            console.log(names)
+            let str = names.join("----->>>")
+            console.log(str)
+            let namesArr = str.split("----->>>")  // split method converts a string to an array
+            console.log(namesArr)
+            names.sort();
+            document.write(names+"<br>")
+            names.reverse();
+            document.write(names+"<br>")
+            document.write(names.includes("akhil")+"<br>")
+            let names2 = ["srija", "sravani", "nikila", "deepa"]
+            let names3 = ["pramod", "manish", "vikram", "avinash"]
+            let mergeArr = names.concat(names2, names3)
+            console.log(mergeArr)
+        </script>
+    </body>
+</html>

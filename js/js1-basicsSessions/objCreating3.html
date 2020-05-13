@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object creation</title>
+    </head>
+
+    <body>
+        <script>
+            "use strict"; //strict mode
+          function Employee(){
+              console.log(this); // this is nothing but reference of current function scope
+          }
+          Employee();
+
+          function emp(){
+              console.log(this);
+          }
+
+          let empObj = new emp();
+        </script>
+    </body>
+</html>
