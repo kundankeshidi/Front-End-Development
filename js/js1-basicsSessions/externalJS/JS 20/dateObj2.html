@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date Object</title>
+    <!--    <meta http-equiv="refresh" content="1"> -->
+    </head>
+
+    <body>
+        <div id = "display"></div>
+        <Script>
+
+            "use strict";
+            function time(){
+                let dateObj = new Date()
+                document.getElementById("display").innerHTML = dateObj.toLocaleTimeString()+"<br>"
+            }
+            setInterval("time()", 1000);
+        </Script>
+    </body>
+</html>

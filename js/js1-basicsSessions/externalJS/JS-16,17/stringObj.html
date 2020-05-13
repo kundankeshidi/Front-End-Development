@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String Object</title>
+    </head>
+
+    <body>
+        <Script>
+            "use strict";
+            let msg = "javascript is client side and server side programming, object based"
+            document.write(msg.length+"<br>")
+            document.write(msg.toUpperCase()+ "<br>")
+            document.write(msg.toLowerCase()+ "<br>")
+            document.write(msg.bold()+ "<br>")
+            document.write(msg.italics()+ "<br>")
+
+            let msg2= "             java is object based language"
+            document.write(msg2.length+"<br>")
+            let msg2Trim = msg2.trim()
+            document.write(msg2Trim.length+"<br>")
+            document.write(msg.replace(/ /g,"")+"<br>")  //g - global
+            document.write(msg.replace(/a/g,"A")+"<br>")
+            document.write(msg.match("java")+"<br>")
+            document.write(msg.match("javaprogramming")+"<br>")
+            document.write(msg.match(/a/g)+"<br>")
+            let vowels = msg.match(/[a,e,i,o,u]/g);
+            document.write(vowels.length+"<br>")
+            let words = msg.split(" ");
+            document.write(words.length+"<br>")
+            document.write(typeof words+"<br>")
+            let str1 = "UIDevelopment"
+            let str2 = "UIdevelopment"
+            document.write(str1.localeCompare(str2)+"<br>")
+            let str4 = "UIDevelopment"
+            let str3 = "UIdevelopment"
+            document.write(str3.localeCompare(str4)+"<br>")
+            let str5 = "UIDevelopment"
+            let str6 = "UIDevelopment"
+            document.write(str6.localeCompare(str5)+"<br>")
+            let url = "www.abc.com";
+            document.write(url.startsWith("http://")+"<br>")
+            if(!url.startsWith("http://")){
+                url = "http://"+url;
+            }
+            document.write(url+"<br>")
+            if(!url.endsWith("/")){
+                url = url+"/";
+            }
+            document.write(url+"<br>")
+            document.write(msg.indexOf("server")+"<br>")
+            let sub1 = msg.substring(msg.indexOf("server"));
+            document.write(sub1+"<br>")
+            let sub2 = msg.substring(msg.indexOf("server"), 41);
+            document.write(sub2+"<br>")
+            let sub3 = msg.substr(msg.indexOf("server"));
+            document.write(sub3+"<br>")
+            let sub4 = msg.substr(msg.indexOf("server"), 6);
+            document.write(sub4+"<br>")
+            document.write(msg.includes("side")+"<br>")
+            document.write(msg.link("http://www.facebook.com")+"<br>")
+        </Script>
+    </body>
+</html>

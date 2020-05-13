@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Two Dimensional arr</title>
+    </head>
+
+    <body>
+        <script>
+            "use strict";
+            let courses = 
+            [["java",["Intro", "StringHandling", "TemplateString"], "html", "css", "angular", "python"],["UI Development", "Typescript", "scala", "hive", "Impala", "Cpp"]]
+            console.log(courses[0][1][0])
+          //  console.log(courses[0][0])
+          //  console.log(courses[1][1])
+            document.write(`<h1> ${courses[0][1][0]} Courses content</h1>`)
+            for(let i = 0; i < courses.length-1; i++){
+                for(let j = 1; j < courses.length; j++){
+                    console.log(courses[i][j])
+                    for(let k = 0; k < courses[i][j].length; k++)
+                    document.write(courses[i][j][k]+"<br>")
+                }
+            }
+
+          document.write(`<h1> ${courses[1][0]} High End Courses content</h1>`)
+            for(let i = 1; i < courses.length; i++){
+                for(let j = 1; j < courses[i].length; j++){
+                    document.write(courses[i][j]+"<br>")
+                }
+            } 
+        </script>
+    </body>
+</html>

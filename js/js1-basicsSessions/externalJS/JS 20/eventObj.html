@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>event Object</title>
+    <!--    <meta http-equiv="refresh" content="1"> -->
+    </head>
+
+    <body>
+        <button type = "button" onclick = "getEvent(event)">clickMe</button>
+        <a href = "dateObj.html" id = "link">Date</a>
+        <Script>       
+
+        function getEvent(eve){
+          
+            console.log(eve)
+        }    
+
+        document.querySelector("#link").onclick = function(eve){
+            eve.preventDefault();
+            console.log(eve.target)
+        }
+        </Script>
+    </body>
+</html>

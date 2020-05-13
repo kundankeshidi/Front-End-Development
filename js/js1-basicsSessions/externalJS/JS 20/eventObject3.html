@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>event Object</title>
+
+    </head>
+
+    <body>
+        <img src = "https://i.picsum.photos/id/0/600/600.jpg">
+        <div>
+        <a href = "../../../images/image10.jpg">Image1</a>
+        <a href = "../../../images/image11.jpg">Image2</a>
+        <a href = "../../../images/image12.jpg">Image3</a>
+        <a href = "../../../images/image13.jpg">Image4</a>
+        <a href = "../../../images/image14.jpg">Image5</a>
+        <a href = "../../../images/image15.jpg">Image6</a>
+        </div>
+        <Script>       
+             for(let ele of document.querySelectorAll("a")){
+                 ele.onclick = function(){
+                    console.log(ele.getAttribute("href"))
+                 }
+             }
+        </Script>
+    </body>
+</html>

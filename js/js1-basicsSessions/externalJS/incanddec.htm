@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inc and dec Ops</title>
+    </head>
+
+    <body>
+        <script>
+            let a = 15, b = 7;
+            // a = b++; o/p : a = 7 (post-increment) here is a is assigned b value and b gets incremented by 1 where as
+            // a = ++b; b is incremented by 1 and then gets assigned to the value of a as 8. (pre-increment)
+             a = ++b; 
+            document.write(`a value is ${a} <br>`);
+            b = --a;
+            // same here as well, a value gets decremented first and gets assigned to b and vice-versa for a
+            document.write(`b value is ${b}`);
+        </script>
+    </body>
+</html>

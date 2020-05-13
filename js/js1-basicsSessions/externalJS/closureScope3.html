@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro for closure</title>
+    </head>
+
+    <body>
+        <script>
+            function wrapper(){
+                let wrapA = 90, wrapB = 120;
+            function calc(){
+                let calA = 100, calB = 200;
+                function add(){
+                    let a = 50, b = 60;
+                    return a+b+calA+calB;
+                }
+
+                function sub(){
+                    let a = 60; b= 50;
+                    return a - b;
+                }
+
+                function mul(){
+                    let a = 60; b= 50;
+                    return a * b + wrapA;
+                }
+
+                function div(){
+                    let a = 60; b= 50;
+                    return a / b;
+                }
+                return div();
+            }
+            return calc();
+        }
+        console.log(wrapper());
+        </script>
+    </body>
+</html>
