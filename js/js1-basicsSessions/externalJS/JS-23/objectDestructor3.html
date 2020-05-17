@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object Destructing</title>
+    
+    </head>
+    <body>
+
+        <script>
+            let employee={id:101,name:"kundan",desg:"Developer",sal:99820,dept:"Backend Developer","Branch":"SFO"};
+            let {id,name,...info}=employee;//destructing
+            console.log(id);
+            console.log(name);
+            console.log(info);
+            
+        </script>
+    </body>
+</html>
