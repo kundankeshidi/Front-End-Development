@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro</title>
+    
+    </head>
+    <body>
+
+        <script>
+            console.dir(Object);
+            let employee={id:101,name:"Kundan",desg:"Developer",sal:99820}
+            
+            console.log(Object.keys(employee))
+            console.log(Object.keys(employee).includes("id")) 
+            console.log(Object.values(employee))
+            console.log(Object.entries(employee))
+            //employee.assign({"dept":"Technical"})
+            Object.assign(employee,{"dept":"Technical"})//mutable
+            console.log(Object.entries(employee))
+            let employee2=Object.assign({},employee,{"Role":"Backend developer"})//immutable code
+            console.log(employee)
+            console.log(employee2)
+        </script>
+    </body>
+</html>
