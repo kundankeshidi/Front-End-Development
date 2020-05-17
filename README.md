@@ -104,4 +104,6 @@ objectConstructor,
 regularExpression
 
 # JS-23
-objectDestructor
+objectDestructor,
+classes,
+inheritance
