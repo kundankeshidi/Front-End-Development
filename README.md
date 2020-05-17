@@ -11,96 +11,96 @@ css7 - index.html page template code
 
 # Javascript
 syntaxes related to:
-variable, varscope, vardeclaration, variablehoisting 
-templateString ES6
-switch conditions
-String Handling
-recursive functions
-prompt
-OnMouseOvernOut
-onLoad
-onKeyUp
-onKeyDown
-onFocusOnBlur
-onDblClick
-onClick
-objectCreating
-nested scope with arrow
-nested function scope
-let keyword
-leftShiftBitwiseOp
-keyValuePair
-Intro
-incanddec
-identifier namespacing
-get option label
-function return value
-function greeting
-function greeting with parameters
-function declaration
-function onChange
-function arithmetic calculation
-function callBy create object
-for loop
-employee object
-json formats
-debugger in code
-comparision
-closure scope
-call back
-assignment operators
-arrow functions
-apply function
+variable, varscope, vardeclaration, variablehoisting, 
+templateString ES6,
+switch conditions,
+String Handling,
+recursive functions,
+prompt,
+OnMouseOvernOut,
+onLoad,
+onKeyUp,
+onKeyDown,
+onFocusOnBlur,
+onDblClick,
+onClick,
+objectCreating,
+nested scope with arrow,
+nested function scope,
+let keyword,
+leftShiftBitwiseOp,
+keyValuePair,
+Intro,
+incanddec,
+identifier namespacing,
+get option label,
+function return value,
+function greeting,
+function greeting with parameters,
+function declaration,
+function onChange,
+function arithmetic calculation,
+function callBy create object,
+for loop,
+employee object,
+json formats,
+debugger in code,
+comparision,
+closure scope,
+call back,
+assignment operators,
+arrow functions,
+apply function,
 alert
 
 # May 7
-Array constructor declaration
-Array constructor declaration with parameter
-Date object
-filter
-find
-for 
-forEach
-forIn
-forOf
+Array constructor declaration,
+Array constructor declaration with parameter,
+Date object,
+filter,
+find,
+for,
+forEach,
+forIn,
+forOf,
 map
 
 # JS-16,17
-all functions declared in May 7
-math object
-navigatorObj
-reducer
-screenObject
+all functions declared in May 7,
+math object,
+navigatorObj,
+reducer,
+screenObject,
 stringObject
 
 # JS-18,19
-array methods
-create element
+array methods,
+create element,
 DOM PROPERTIES:
-   getattribute
-   getElementById
-   getElementByClassName
-   getElementByName
-   getElementByTagName
-innerHTML
-querySelector
-querySelectorAll
-spreadOperator
+   getattribute,
+   getElementById,
+   getElementByClassName,
+   getElementByName,
+   getElementByTagName //
+innerHTML,
+querySelector,
+querySelectorAll,
+spreadOperator,
 twoDimension
 
 # JS-20
-dateObj
-eventObj
+dateObj,
+eventObj,
 openandConfirm
 
 # JS-21
-eventTask
-eventTaskSplitting
+eventTask,
+eventTaskSplitting,
 match
 
 # JS-22
-formValidation
-objectConstructor
+formValidation,
+objectConstructor,
 regularExpression
 
 # JS-23
