@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inheritance</title>
+    
+    </head>
+    <body>
+
+        <script>
+            class Employee{
+
+                id
+                name
+                age
+
+                constructor(){
+                    console.log("Employee constructor");
+                }
+
+                setInfo(eid, ename, esal){
+                    this.id = eid
+                    this.name = ename
+                    this.sal = esal
+                }
+                
+                getInfo(){
+                    console.log(this.id+":"+this.name+":"+this.sal)
+                }
+            }
+            
+            class Manager extends Employee{
+                dept
+                constructor(){
+                    super()
+                    console.log("Manager constructor")
+                }
+
+                setDept(dep){
+                    this.dept = dep
+                }
+
+                getDept(){
+                    console.log(this.dept)
+                }
+            }
+            
+            let mgr=new Manager()
+            mgr.setInfo(90, "kundan", 25)    
+            console.log(mgr.id)
+            console.log(mgr.name)
+            mgr.getInfo()
+            
+            mgr.setDept("Technical")
+            mgr.getDept()
+        </script>
+    </body>
+</html>

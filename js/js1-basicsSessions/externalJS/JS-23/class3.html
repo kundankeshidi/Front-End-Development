@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>class</title>
+    
+    </head>
+    <body>
+
+        <script>
+            class Employee{
+                id=90
+                name="BHanu"
+                age = 23
+                setInfo(eid,ename, esal){
+                    console.log(eid+":"+ename+":"+esal)
+                }
+                getInfo(){
+                    console.log(eid+":"+ename+":"+esal);//it throws an error
+                }
+            }
+            let emp=new Employee();
+            console.log(emp.id);
+            console.log(emp.name);
+            console.log(emp.sal)
+            emp.setInfo(90,"kundan", 23)
+            emp.getInfo();
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>class</title>
+    
+    </head>
+    <body>
+
+        <script>
+            class Employee{
+
+                id
+                name
+                sal
+
+                constructor(){
+                    console.log("Employee constructor")
+                }
+
+                setInfo(eid, ename, esal){
+                    this.id = eid
+                    this.name = ename
+                    this.sal = esal
+                }
+
+                getInfo(){
+                    console.log(this.id+":"+this.name+":"+this.sal)
+                }
+            }
+            
+            class Manager{
+                dept
+                setDept(dep){
+                    this.dept = dep
+                }
+
+                getDept(){
+                    console.log(this.dept)
+                }
+            }
+
+            let emp=new Employee();
+            emp.setInfo(90, "kundan", 25)    
+            console.log(emp.id)
+            console.log(emp.name)
+            console.log(emp.sal)
+
+            emp.getInfo()
+            let mgr=new Manager()
+            mgr.setDept("Technical")
+            mgr.getDept()
+        </script>
+    </body>
+</html>
