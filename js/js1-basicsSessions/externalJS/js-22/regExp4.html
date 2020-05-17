@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reg exp</title>
+    </head>
+
+    <body>
+        <script>
+            let fname = "KundanGhaikwadh"
+            let stringValidation = new RegExp(/^[a-zA-Z]{5,15}$/)
+            console.log(stringValidation.exec(fname))
+        </script>
+    </body>
+</html>

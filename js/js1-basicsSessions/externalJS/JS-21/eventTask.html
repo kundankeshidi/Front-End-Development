@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro</title>
+        <style>
+            th,td{
+                border:solid 2px greenyellow;
+            }
+        </style>
+
+    </head>
+    <body>
+        
+        <script>
+            let employees=[
+                {"id":101, "name":"kundan", "designation": "Manager", "salary":839000},
+                {"id":102, "name":"Akhil", "designation": "Director", "salary":800000},
+                {"id":103, "name":"Naveen", "designation": "Developer", "salary":29990},
+                {"id":104, "name":"Rahul", "designation": "Sr. Developer", "salary":834000},
+                {"id":105, "name":"Bellam", "designation": "Analyst", "salary":89000}
+            ]
+            let table=document.createElement("table");
+            document.body.appendChild(table);
+            let tr=document.createElement("tr");
+                table.appendChild(tr);
+            tr.innerHTML="<th>EmpId</th><th>EmpName</th><th>Designation</th><th>Salary</th><th>Operations</th>"
+            for(let emp of employees){
+                let tr=document.createElement("tr");
+                table.appendChild(tr);
+                tr.innerHTML=`<td><input type="text" value="${emp.id}"></td>
+                            <td><input type="text" value="${emp.name}"></td>
+                            <td><input type="text" value="${emp.designation}"></td>
+                            <td><input type="text" value="${emp.salary}"></td>
+                            <td><button type="button" class="edit">Edit</button>
+                                <button type="button" class="update">Update</button>
+                                <button type="button" class="Delete">Delete</button>
+                            </td>`;
+            }
+            table.style.border="solid 2px magenta"
+            table.style.borderCollapse="collapse";
+            for(let ele of document.getElementsByClassName("update")){
+                ele.style.display="none";
+                ele.onclick=function(e){
+                    let target=e.target;
+                    target.style.display="none";
+                    target.previousElementSibling.style.display="inline-block";
+                    let row=target.parentElement.parentElement;
+                    console.log(row);
+                    for(let i=0;i<row.children.length-1;i++){
+                        row.children[i].children[0].disabled=true;
+                    }
+                }
+            }
+            for(let ele of document.getElementsByClassName("edit")){
+                ele.onclick=function(e){
+                    let target=e.target;
+                    target.style.display="none";
+                    target.nextElementSibling.style.display="inline-block";
+                    let row=target.parentElement.parentElement;
+                    console.log(row);
+                    for(let i=0;i<row.children.length-1;i++){
+                        row.children[i].children[0].disabled=false;
+                    }
+                }
+            }
+            
+            for(let ele of document.getElementsByTagName("input")){
+                ele.disabled=true;
+                ele.style.background="transparent";
+                ele.style.border="none";
+                
+            }
+        </script>
+    </body>
+</html>

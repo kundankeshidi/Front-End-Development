@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reg exp</title>
+    </head>
+
+    <body>
+        <script>
+            let mobNo = "939-001-2900"
+            let stringValidation = new RegExp(/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/)
+            console.log(stringValidation.exec(mobNo))
+        </script>
+    </body>
+</html>

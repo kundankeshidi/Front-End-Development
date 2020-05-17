@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>match</title>
+        <style>
+            .err{
+                color: mediumseagreen;
+            }
+            h1{
+                text-align: center;
+            }
+            .label{
+                width:120px;
+                float:left;
+            }
+            form div{
+                margin-top: 3px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Registration form</h1>
+        <hr>
+            <form>
+                <div>
+                    <label for = "fname" class = "label">FirstName</label>
+                    <input type = "text" name = "fname" id = "fname">
+                    <Span id = "ferr" class = "err"></Span>
+                </div>
+
+                <div>
+                    <label for = "lname" class = "label">lastName</label>
+                    <input type = "text" class = "lname" id = "lname">
+                    <span id = "lerr" class = "err"></span>
+                </div>
+
+                <div>
+                    <label for = "uname" class = "label">UserName</label>
+                    <input type = "text" class = "uname" id = "uname">
+                    <span id = "uerr" class = "err"></span>
+                </div>
+
+                <div>
+                    <label for = "pass" class = "label">Password</label>
+                    <input type = "text" class = "pass" id = "pass">
+                    <span id = "perr" class = "err"></span>
+                </div>
+
+                <div>
+                    <label for = "cpass" class = "label">ConfirmPassword</label>
+                    <input type = "text" class = "cpass" id = "cpass">
+                    <span id = "cperr" class = "err"></span>
+                </div>
+
+                <div>
+                    <h2>Select Gender</h2>
+                    <label for = "gen1">Male</label>
+                    <input type = "radio" class = "gender" id = "gen1" value = "male">
+                    <label for = "gen2">Female</label>
+                    <input type = "radio" class = "gender" id = "gen2" value = "female">
+                    <span id = "rerr" class = "err"></span>
+                </div>
+
+                <div>
+                    <h2>Select course/courses</h2>
+                    <label for = "course1">JavaScript</label>
+                    <input type = "checkbox" class = "courses" id = "course1" value = "javascript">
+                    <label for = "course2">typescript</label>
+                    <input type = "checkbox" class = "courses" id = "course2" value = "typescript">
+                    <label for = "course3">Angular</label>
+                    <input type = "checkbox" class = "courses" id = "course3" value = "Angular">
+                    <label for = "course4">css</label>
+                    <input type = "checkbox" class = "courses" id = "course4" value = "css">
+                    <label for = "course5">HTML5</label>
+                    <input type = "checkbox" class = "courses" id = "course5" value = "HTML5">
+                    <label for = "course6">React</label>
+                    <input type = "checkbox" class = "courses" id = "course6" value = "React">
+                    <span id = "rerr" class = "err"></span>
+                </div>
+
+                <div>
+                    <label for = "ctime" class = "label">CourseTiming</label>
+                    <select id = "ctime" name = "ctime">
+                        <option value = ""></option>
+                        <option value = "9-10AM">9-10AM</option>
+                        <option value = "10-11AM">10-11AM</option>
+                        <option value = "11-12PM">11-12PM</option>
+                        <option value = "12-1PM">12-1PM</option>
+                    </select>
+                    <span id = "cterr" class = "err"></span>
+                </div>
+
+                <div>
+                    <label for = "mob" class = "label">MobileNo</label>
+                    <input type = "text" class = "mob" id = "mob">
+                    <span id = "moberr" class = "err"></span>
+                </div>
+
+                <div>
+                    <label for = "mail" class = "label">E-Mail</label>
+                    <input type = "text" class = "mail" id = "mail">
+                    <span id = "merr" class = "err"></span>
+                </div>
+
+                <div>
+                    <button type = "submit" id = "btn">Register</button>
+                </div>
+            </form>
+            <script>
+                document.querySelector("#btn").onclick = function(){
+                    let fname = document.getElementById("fname").value
+                    let lnmae = document.getElementById("lname").value
+                    if(fname==""){
+                        document.querySelector("#ferr").innerHTML="please enter firstname";
+                        return false;
+                    }
+                    else if(!fname.match(/^[a-zA-Z]+$/)){
+                        document.querySelector("#ferr").innerHTML="Invalid";
+                        return false;
+                    }
+                    else{
+                        document.querySelector("#ferr").innerHTML="";
+                    }
+                    if(lname==""){
+                        document.querySelector("#lerr").innerHTML="please enter lastname";
+                        return false;
+                    }
+                    else if(!lname.match(/^[a-zA-Z]+$/)){
+                        document.querySelector("#lerr").innerHTML="Invalid";
+                        return false;
+                    }
+                    else{
+                        document.querySelector("#lerr").innerHTML="";
+                    }
+                }
+        </Script>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reg exp</title>
+    </head>
+
+    <body>
+        <script>
+            let fname = "KUN123NNNN"
+            let stringValidation = new RegExp(/^[A-Z]{3}[0-9]{3}N{4}$/)
+            console.log(stringValidation.exec(fname))
+        </script>
+    </body>
+</html>

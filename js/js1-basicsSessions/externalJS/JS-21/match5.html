@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>match</title>
+    </head>
+
+    <body>
+            <form>
+                <div>
+                    <label for = "fname">FirstName</label>
+                    <input type = "text" name = "fname" id = "fname">
+                    <Span id = "ferr" class = "err"></Span>
+                </div>
+
+                <div>
+                    <label for = "lname">lastName</label>
+                    <input type = "text" class = "lname" id = "lname">
+                    <span id = "lerr" class = "err"></span>
+                </div>
+
+                <div>
+                    <button type = "submit" id = "btn">register</button>
+                </div>
+            </form>
+            <script>
+                document.querySelector("#btn").onclick = function(){
+                    let fname = document.getElementById("fname").value
+                    let lnmae = document.getElementById("lname").value
+                    if(fname == ""){
+                        document.querySelector("#ferr").innerHTML= "please enter firstname"
+                        return false
+                    }
+                    else if(!fname.match(/^[a-zA-Z]+$/)){
+                        document.querySelector("#ferr").innerHTML = "Invalid"
+                        return false
+                    }
+                    else{
+                        document.querySelector("#ferr").innerHTML = "Invalid"
+                        //return false
+                    }
+
+                    if(lname == ""){
+                        document.querySelector("#lerr").innerHTML= "please enter lastname"
+                        return false
+                    }
+                    else if(!lname.match(/^[a-zA-Z]+$/)){
+                        document.querySelector("#lerr").innerHTML = "Invalid"
+                        return false
+                    }
+                    else{
+                        document.querySelector("#lerr").innerHTML = ""
+                      //  return false
+                    }
+                }
+        </Script>
+    </body>
+</html>
