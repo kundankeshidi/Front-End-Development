@@ -107,3 +107,11 @@ regularExpression
 objectDestructor,
 classes,
 inheritance
+
+# JS-24
+importClass.html,
+exportClass.js,
+importProp,
+importDefault,
+importAlias,
+importMultiple
