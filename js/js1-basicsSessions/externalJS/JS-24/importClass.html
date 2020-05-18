@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Import function</title>
+    </head>
+
+    <body>
+        <script type="module">
+            import {Employee} from './exportClass.js'
+            let emp=new Employee();
+            emp.setInfo(90,"kundan", 23)
+            emp.getInfo();
+            console.log(emp.id);
+            console.log(emp.name);
+            console.log(emp.sal)
+        </script>
+    </body>
+</html>

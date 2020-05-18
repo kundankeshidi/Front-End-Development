@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Import function</title>
+    </head>
+
+    <body>
+        <script type="module">
+            import show,{Manager, fname, lname, desgn, sal, add} from './exportMultiple.js'
+            let mgr=new Manager()
+            mgr.setInfo(90, "kundan", 25)    
+            console.log(mgr.id)
+            console.log(mgr.name)
+            mgr.getInfo()
+            mgr.setDept("Technical")
+            mgr.getDept()
+
+            console.log(fname+":"+lname+":"+desgn+":"+sal)
+            show()
+            console.log(add(50,70,80))
+        </script>
+    </body>
+</html>

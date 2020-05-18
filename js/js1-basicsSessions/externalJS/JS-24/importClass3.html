@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Import function</title>
+    </head>
+
+    <body>
+        <script type="module">
+            import {Manager} from './exportClass3.js'
+            let mgr=new Manager()
+            mgr.setInfo(90, "kundan", 25)    
+            console.log(mgr.id)
+            console.log(mgr.name)
+            mgr.getInfo()
+            mgr.setDept("Technical")
+            mgr.getDept()
+        </script>
+    </body>
+</html>
