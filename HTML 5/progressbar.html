@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro</title>
+        <style>
+            #meter{
+                height: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <progress value="10" min="0" max="100" id="prog"></progress>
+            <output id="perc"></output>
+        </form>
+        <script>
+        let reading=0;
+        function loadProgress(val){
+            let interval;
+            document.querySelector("#prog").value = val;
+            document.querySelector("#perc").value = val + "%";
+            val++;
+            interval=setTimeout("loadProgress("+val+")",50);
+            if(val>100){
+                let image=document.createElement("img");
+                document.body.appendChild(image);
+                image.setAttribute("src","../images/image10.png");
+                clearTimeout(interval);
+                
+            }
+        }
+        loadProgress(reading);
+        </script>
+    </body>
+</html>

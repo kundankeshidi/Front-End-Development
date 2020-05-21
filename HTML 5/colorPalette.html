@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro</title>
+    </head>
+    
+    <body>
+        <form>
+        <div>
+            <label for="col">Select color</label>
+            <input type="color" name="col" id="col">
+        </div>    
+        </form>
+        <script>
+            document.querySelector("#col").onchange=function(){
+              let color=this.value;  
+                document.body.style.background=color;    
+            }        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro</title>
+        <style>
+            #canv{
+                border:solid 2px red;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="canv" width="250" height="250"></canvas>
+        <script>
+            let ele=document.getElementById("canv");
+            let graphic=ele.getContext('2d');
+
+            function animation(){
+                graphic.fillRect(0,0, ele.width, ele.height)
+                graphic.fillStyle = "white"
+                graphic.arc(50,50,50,0,2*Math.PI)
+                graphic.fill()
+            }
+        </script>
+    </body>
+    
+</html>

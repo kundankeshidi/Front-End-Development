@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro</title>
+        <style>
+            #canv{
+                border:solid 2px red;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="canv" width="200" height="200"></canvas>
+        <script>
+            let ele=document.getElementById("canv");
+            let graphic=ele.getContext('2d');
+            console.log(graphic);
+            graphic.font="40px courier";
+            graphic.strokeText("kundan",50,200);
+        </script>
+    </body>
+    
+</html>

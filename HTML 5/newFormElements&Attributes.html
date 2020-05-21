@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro</title>
+    </head>
+
+    <body>
+        <form>
+            <div>
+                <label for = "first">FirstName</label>
+                <input type = "text" name = "first" id = "first" required pattern="^[a-zA-Z]+$" autofocus
+                title="enter alphas only">
+            </div>
+
+            <div>
+                <label for = "last">LastName</label>
+                <input type = "text" name = "last" id = "last" required pattern="^[a-zA-Z]+$"
+                title="enter alphas only">
+            </div>
+
+            <div>
+                <label for = "date">Date</label>
+                <input type = "date" name = "date" id = "date" required
+                title="enter valid date format only">
+            </div>
+
+            <div>
+                <label for = "datet">Datetime</label>
+                <input type = "datetime" name = "datet" id = "datet" required
+                title="enter valid date format only">
+            </div>
+
+            <div>
+                <label for="mon">Month</label>
+                <input type="month" name="mon" id="mon" required>
+            </div>
+            
+            <div>
+                <label for="time">time</label>
+                <input type="time" name="time" id="time" required>
+            </div>
+            <meter></meter>
+
+            <div>
+                <button type = "submit">Register</button>
+            </div>
+        </form>
+    </body>
+</html>

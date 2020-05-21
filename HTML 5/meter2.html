@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>meter</title>
+        <style>
+            #meter{
+                height: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <meter value="15" min="0" max="100" low="20" high="40" optimum="45" id="meter"></meter>
+        </form>
+        <script>
+        let reading=0;
+        function loadMeter(val){
+            document.querySelector("#meter").value = val;
+            val++;
+            setTimeout("loadMeter("+val+")",200);
+        }
+        loadMeter(reading);
+        </script>
+    </body>
+</html>
