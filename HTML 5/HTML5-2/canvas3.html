@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro</title>
+        <style>
+            #canv{
+                border:solid 2px red;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="canv" width="500" height="500"></canvas>
+        <script>
+            let ele=document.getElementById("canv");
+            let graphic=ele.getContext('2d');
+            let gradient=graphic.createLinearGradient(0,0,500,500);
+            gradient.addColorStop(0,"red");
+            gradient.addColorStop(0.4,"green");
+            gradient.addColorStop(0.8,"blue");
+            graphic.fillStyle=gradient;
+            console.log(graphic);
+            graphic.fillRect(50,50,250,250);     
+        </script>
+    </body>
+    
+</html>

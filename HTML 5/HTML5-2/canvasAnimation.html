@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro</title>
+        <style>
+            #canv{
+                border:solid 2px red;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="canv" width="500" height="500"></canvas>
+        <script>
+            let ele=document.getElementById("canv");
+            let graphic=ele.getContext('2d');
+            console.log(graphic);
+            function convertDegreesToRadius(degrees){
+                return degrees*Math.PI/180;
+            }
+            function animate(){
+            let dateObj=new Date();
+            let hours=dateObj.getHours();
+            let min=dateObj.getMinutes();
+            let sec=dateObj.getSeconds();
+            let time=dateObj.toLocaleTimeString();
+            let dispDate=dateObj.toLocaleDateString();    
+            graphic.beginPath();
+            graphic.fillStyle="rgba(0,0,0,0.05)";
+            graphic.fillRect(0,0,ele.width,ele.height);
+            graphic.beginPath();
+            graphic.strokeStyle="green";
+            graphic.lineWidth=17;
+            graphic.arc(250,250,240,convertDegreesToRadius(360-90),convertDegreesToRadius((hours*15)-90));
+            graphic.stroke();
+            graphic.beginPath();
+            graphic.strokeStyle="orange";
+            graphic.arc(250,250,200,convertDegreesToRadius(360-90),convertDegreesToRadius((min*6)-90));
+            graphic.stroke();
+            graphic.beginPath();
+            graphic.strokeStyle="purple";
+            graphic.arc(250,250,150,convertDegreesToRadius(360-90),convertDegreesToRadius((sec*6)-90));
+            graphic.stroke();
+            graphic.beginPath();
+            graphic.font="40px courier";
+            graphic.fillStyle="white";
+            graphic.fillText(time,130,250);
+            graphic.beginPath();
+//            graphic.font="40px courier";
+//            graphic.fillStyle="white";
+            graphic.fillText(dispDate,130,300);    
+            }
+            setInterval("animate()",50);
+            
+        </script>
+    </body>
+    
+</html>
